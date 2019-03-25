@@ -20,9 +20,7 @@ osx-setup-steps: &osx-setup-steps
     - export PYENV_VERSION=$PYTHON
     - export PATH="/Users/travis/.pyenv/shims:${PATH}"
     - pyenv virtualenv venv
-    - ls
-    - ls venv
-    - source venv/bin/activate
+    - pyenv activate venv
     - python --version
 
 # We have to be explicit with the OSX versions because Python is not supported by default.
